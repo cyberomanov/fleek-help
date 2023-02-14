@@ -84,7 +84,11 @@ EOF
 ```shell
 chmod u+x ~/fleek_upgrade.sh
 ```
-3. Edit crontab rule:
+3. Open crontab editor:
+```shell
+crontab -e
+```
+4. Edit crontab rule:
 ```shell
 # fleek
 15 */4 * * * bash ~/fleek_upgrade.sh >> fleek_upgrade.log
