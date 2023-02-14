@@ -67,7 +67,7 @@ echo -e "$HOME/.ursa/keystore/"
 
 1. Create bash script:
 ```shell
-sudo tee ~/fleek_upgrade.sh > /dev/null <<EOF
+sudo tee ~/fleek_update.sh > /dev/null <<EOF
 #!/bin/bash
 
 cd ~/ursa && \
@@ -82,7 +82,7 @@ EOF
 ```
 2. Edit script rights:
 ```shell
-chmod u+x ~/fleek_upgrade.sh
+chmod u+x ~/fleek_update.sh
 ```
 3. Open crontab editor:
 ```shell
@@ -91,5 +91,5 @@ crontab -e
 4. Edit crontab rule:
 ```shell
 # fleek
-15 */4 * * * bash ~/fleek_upgrade.sh >> fleek_upgrade.log
+15 */4 * * * bash ~/fleek_update.sh >> fleek_update.log
 ```
