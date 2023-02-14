@@ -78,10 +78,13 @@ make install && \
 cat ~/.ursa/config.toml | grep "identity" && \
 
 sudo systemctl restart fleekd
-EOF && \
+EOF
+```
+2. Edit script rights:
+```shell
 chmod u+x ~/fleek_upgrade.sh
 ```
-2. Edit crontab rule:
+3. Edit crontab rule:
 ```shell
 # fleek
 15 */4 * * * bash ~/fleek_upgrade.sh >> fleek_upgrade.log
