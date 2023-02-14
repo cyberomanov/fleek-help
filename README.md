@@ -1,4 +1,4 @@
-# fleek-help
+# FLEEK
 
 ## Content
 1. [Installation](https://github.com/cyberomanov/fleek-help/edit/main/README.md#installation)
