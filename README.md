@@ -91,5 +91,5 @@ crontab -e
 4. Edit crontab rule:
 ```shell
 # fleek
-15 */4 * * * bash ~/fleek_update.sh >> fleek_update.log
+15 */4 * * * bash ~/fleek_update.sh >> ~/fleek_update.log
 ```
